@@ -60,6 +60,13 @@ pipeline {
                 sh 'kubectl get deploy,pod,service'
             }
         }
+        // app upgrade to pull latest image from docker hub
+        stage('upgrade'){
+            steps {
+                echo 'upgrading to current iamge'
+                sh 'kubectl set image deployment ashu-tomcat udayjava=udaysivastava/udayjava:tomcatdeploy$BUILD_NUMBER'
+            }
+        }
 
     }
 }

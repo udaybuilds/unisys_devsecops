@@ -1,10 +1,10 @@
 FROM oraclelinux:8.4 AS WarfileBuilder 
-LABEL name=ashutoshh
+LABEL name=uday
 RUN dnf install java-1.8.0-openjdk.x86_64  java-1.8.0-openjdk-devel.x86_64  maven git -y 
 RUN mkdir /uday-java
 WORKDIR /uday-java
-RUN git clone https://github.com/redashu/java-springboot.git 
-WORKDIR java-springboot
+
+COPY . .
 # now running maven to create .war file 
 RUN mvn clean package
 
