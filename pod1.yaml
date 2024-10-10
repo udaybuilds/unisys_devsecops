@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: udaypod1  # name of pod
+spec: 
+  containers:
+  - name: udaycp1
+    image: udaysivastava/udayjava:tomcatdeploy14
+    ports:
+    - containerPort: 8080

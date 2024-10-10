@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: uday-tomcat
+  name: uday-tomcat
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: uday-tomcat
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: uday-tomcat
+    spec:
+      containers:
+      - image: udaysivastava/udayjava:tomcatdeploy14
+        name: udayjava
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
