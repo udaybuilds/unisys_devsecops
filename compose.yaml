@@ -5,7 +5,7 @@ services:
     build: 
       context: .  # location of dockerfile 
       dockerfile:  Dockerfile # name of dockerfile
-    container_name: udayspringc1 
+    container_name: udayspringc 
     ports:
     - 3011:8080  
 # above steps have merging of build and run ok
