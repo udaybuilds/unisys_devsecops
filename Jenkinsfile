@@ -64,7 +64,7 @@ pipeline {
         stage('upgrade'){
             steps {
                 echo 'upgrading to current iamge'
-                sh 'kubectl set image deployment ashu-tomcat udayjava=udaysivastava/udayjava:tomcatdeploy$BUILD_NUMBER'
+                sh 'kubectl set image deployment uday-tomcat udayjava=udaysivastava/udayjava:tomcatdeploy$BUILD_NUMBER'
             }
         }
 
