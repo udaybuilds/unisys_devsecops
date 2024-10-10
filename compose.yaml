@@ -1,0 +1,12 @@
+version: '3.9'
+services: 
+  ashu-flaskapp: 
+    image: ashu-flask:uniappv1  # if this image is not present then only it will build 
+    build: 
+      context: .  # location of dockerfile 
+      dockerfile:  Dockerfile # name of dockerfile
+    container_name: ashupyc1 
+    ports:
+    - 3011:5000  
+# above steps have merging of build and run 
+  
