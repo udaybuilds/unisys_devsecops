@@ -6,7 +6,7 @@ pipeline {
             // steps 
             steps {
                 echo 'fetching git repo'
-                git branch: 'springboot', url:'https://github.com/redashu/unisys_devsecops.git'
+                git branch: 'springboot', url:'https://github.com/udaybuilds/unisys_devsecops.git'
                 sh 'ls'
             }
             
