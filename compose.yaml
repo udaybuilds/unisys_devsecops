@@ -7,6 +7,6 @@ services:
       dockerfile:  Dockerfile # name of dockerfile
     container_name: udayspringc 
     ports:
-    - 3011:8080  
+    - 3012:8080  
 # above steps have merging of build and run ok
   
