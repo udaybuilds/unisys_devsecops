@@ -10,4 +10,4 @@ RUN mvn clean package
 
 FROM tomcat 
 LABEL email="udaysrivastava0@gmail.com"
-COPY --from=WarfileBuilder /uday-java/java-springboot/target/WebApp.war /usr/local/tomcat/webapps/
+COPY --from=WarfileBuilder /uday-java/target/WebApp.war /usr/local/tomcat/webapps/
