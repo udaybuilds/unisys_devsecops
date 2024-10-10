@@ -8,5 +8,5 @@ services:
     container_name: ashuspringc1 
     ports:
     - 3011:8080  
-# above steps have merging of build and run 
+# above steps have merging of build and run ok
   
